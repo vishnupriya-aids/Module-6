@@ -26,6 +26,15 @@ To write a Python program that demonstrates **operator overloading** by overload
 
 ## 💻 Program
 
+class Number: def init(self, value): self.value = value
+
+def __lt__(self, other):
+    return self.value < other.value
+a = int(input("Enter first number: ")) b = int(input("Enter second number: "))
+
+num1 = Number(a) num2 = Number(b) if num1 < num2: print(a, "is less than", b) else: print(a, "is not less than", b)
 ## Output
+Enter first number: 10 Enter second number: 20 10 is less than 20
 
 ## Result
+The program executed successfully and demonstrated operator overloading by redefining the < operator using the lt method in a custom class.
